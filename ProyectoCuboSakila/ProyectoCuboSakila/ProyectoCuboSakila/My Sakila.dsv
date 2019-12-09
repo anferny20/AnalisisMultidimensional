@@ -1,0 +1,149 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f3481261-7b55-435d-8ce6-84bda6f9dad5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>My Sakila</ID>
+  <Name>My Sakila</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>My_Sakila</DataSourceID>
+  <Schema>
+    <xs:schema id="My_x0020_Sakila" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="My_x0020_Sakila" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="bf208216-173e-4305-8fad-5c5f7a733353">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_customer" msprop:design-time-name="135723fe-0e92-4333-ae28-a245a705206f" msprop:DbTableName="customer" msprop:FriendlyName="customer" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="customer_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ecee3de8-0feb-4eaa-9737-6d0116ae3315" msprop:DbColumnName="customer_id" msprop:FriendlyName="customer_id" type="xs:int" />
+                  <xs:element name="first_name" msprop:design-time-name="cd4c305f-1113-470e-b9c0-64f1124c78f6" msprop:DbColumnName="first_name" msprop:FriendlyName="first_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="last_name" msprop:design-time-name="ea3789a4-e151-4a13-9cfa-b361b368d9e6" msprop:DbColumnName="last_name" msprop:FriendlyName="last_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="email" msprop:design-time-name="8fc5f6cc-1736-4141-bc01-08bf3f7e141f" msprop:DbColumnName="email" msprop:FriendlyName="email" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="address_id" msprop:design-time-name="0531800b-2afc-4471-b865-4ed4ffc73d1d" msprop:DbColumnName="address_id" msprop:FriendlyName="address_id" type="xs:int" />
+                  <xs:element name="create_date" msprop:design-time-name="82003505-d83d-4e65-88fd-15d0362ded2c" msprop:DbColumnName="create_date" msprop:FriendlyName="create_date" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_inventory" msprop:design-time-name="0f444d4e-7cce-45d7-a8c2-88dec99f3fe0" msprop:DbTableName="inventory" msprop:FriendlyName="inventory" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="inventory_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="11d133c7-23d7-488e-bae7-d0026dbecdfa" msprop:DbColumnName="inventory_id" msprop:FriendlyName="inventory_id" type="xs:int" />
+                  <xs:element name="film_Name" msprop:design-time-name="ca000303-931a-4777-a679-d8cf6984fab5" msprop:DbColumnName="film_Name" msprop:FriendlyName="film_Name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="store_id" msprop:design-time-name="50edffda-7e44-48b0-af0f-0183eb2c119b" msprop:DbColumnName="store_id" msprop:FriendlyName="store_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_payment" msprop:design-time-name="125f226e-75a2-46bc-8331-c44255da6ea9" msprop:DbTableName="payment" msprop:FriendlyName="payment" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="payment_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="638add02-e572-424a-b57b-6f60171b012e" msprop:DbColumnName="payment_id" msprop:FriendlyName="payment_id" type="xs:int" />
+                  <xs:element name="customer_id" msprop:design-time-name="07aa6b07-9ce3-4108-ae57-1e1ac7260384" msprop:DbColumnName="customer_id" msprop:FriendlyName="customer_id" type="xs:int" />
+                  <xs:element name="rental_id" msprop:design-time-name="442392ca-4e99-4ca8-93b8-56f69b7b74b7" msprop:DbColumnName="rental_id" msprop:FriendlyName="rental_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="amount" msprop:design-time-name="ca8b07f5-6bbb-40f8-8dde-ef2e44814b66" msprop:DbColumnName="amount" msprop:FriendlyName="amount" type="xs:decimal" />
+                  <xs:element name="payment_date" msprop:design-time-name="70482487-8752-4e08-b8ee-ceeaa56f40b4" msprop:DbColumnName="payment_date" msprop:FriendlyName="payment_date" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_rental" msprop:design-time-name="6b638ab1-e579-4bfb-a812-ddd5cbaf721c" msprop:DbTableName="rental" msprop:FriendlyName="rental" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="rental_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="16f2bd73-d03e-46bf-b751-aa05e212aef3" msprop:DbColumnName="rental_id" msprop:FriendlyName="rental_id" type="xs:int" />
+                  <xs:element name="rental_date" msprop:design-time-name="ba632138-0293-4719-a8a5-ad7d6f43f306" msprop:DbColumnName="rental_date" msprop:FriendlyName="rental_date" type="xs:dateTime" />
+                  <xs:element name="inventory_id" msprop:design-time-name="c6da5558-f660-4c4c-a482-489637f492a8" msprop:DbColumnName="inventory_id" msprop:FriendlyName="inventory_id" type="xs:int" />
+                  <xs:element name="customer_id" msprop:design-time-name="c66ab9ca-88cc-4768-ad80-58b672ee7c6b" msprop:DbColumnName="customer_id" msprop:FriendlyName="customer_id" type="xs:int" />
+                  <xs:element name="return_date" msprop:design-time-name="465c7fae-bda2-49b1-a833-73c1d48a2c97" msprop:DbColumnName="return_date" msprop:FriendlyName="return_date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_customer" />
+          <xs:field xpath="customer_id" />
+        </xs:unique>
+        <xs:unique name="dbo_inventory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_inventory" />
+          <xs:field xpath="inventory_id" />
+        </xs:unique>
+        <xs:unique name="dbo_payment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_payment" />
+          <xs:field xpath="payment_id" />
+        </xs:unique>
+        <xs:unique name="dbo_rental_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_rental" />
+          <xs:field xpath="rental_id" />
+        </xs:unique>
+        <xs:keyref name="fk_rental_customer" refer="Constraint1">
+          <xs:selector xpath=".//dbo_rental" />
+          <xs:field xpath="customer_id" />
+        </xs:keyref>
+        <xs:keyref name="fk_rental_inventory" refer="dbo_inventory_Constraint1">
+          <xs:selector xpath=".//dbo_rental" />
+          <xs:field xpath="inventory_id" />
+        </xs:keyref>
+        <xs:keyref name="fk_payment_customer" refer="Constraint1">
+          <xs:selector xpath=".//dbo_payment" />
+          <xs:field xpath="customer_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <My_x0020_Sakila xmlns="" />
+  </Schema>
+</DataSourceView>
